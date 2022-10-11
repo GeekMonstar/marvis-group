@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+:root{
+    --main-color: #A5B2D5;
+    --secondary-color: #224099;
+    --thirthly-color: black;
+    --main-font-color: white;
+    --secondary-font-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    background: var(--main-color);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    z-index: 2;
+}
+h2{
+    padding: 10px;
+}
+span.name {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+}
+#MGhfp{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#MGbb{
+    width: 45px;
+    height: 40px;
+    margin: 5px;
+    position: relative;
+}
+#MGbbbar{
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    transform: translateY(-50%);
+    top: 50%;
+    box-shadow: 0px 5px 10px black;
+}
+#MGbbbar::before{
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: -15px;
+}
+#MGbbbar::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 15px;
+}
+#MGlogLink{
+    display: flex;
+    justify-content: center;
+}
+#MGlogLink img{
+    height: 70px;
+    width: auto;
+}
+#MGlangMen{
+    margin: 5px;
+}
+#MGnb{
+    width: 100%;
+    height: 20%;
+    background-color: var(--secondary-color);
+}
+#MGlaund{
+    position: relative;
+    background: url(../img/launding-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: -60px;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#MGlaundcover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:linear-gradient(45deg, #224099,#224099, #22409990, #22409980, #22409970, #22409960, #22409950);
+}
+#MGmaincont{
+    width: 100%;
+}
+#MGpresentsec{
+    width: 100%;
+}
+.MGsechead{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+}
+.MGdeccont{
+    width: 100%;
+    min-height: 100px;
+}
+#MGdeccontPresent, #MGdeccontMis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+p{
+    padding: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+.MGdeccontEntitm{
+    width: 70%;
+    min-height: 10px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    border: .1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MGdeccontEntitmimg img{
+    height: 60px;
+    width: auto;
+}
+#MGdeccontPart{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.MGdeccontPartitm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.MGdeccontPartitmimg{
+    margin: 20px;
+}
+.MGdeccontPartitmimg img{
+    height: 100px;
+    width: auto;
+}
+#darkblue{
+    color: #1D274A;
+}
+#green{
+    color: #8CC540;
+}
+#solidgreen{
+    color: #4E9D00;
+}
+.MGdeccontEntitmpct{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+svg{
+    height: 40px;
+    width: auto;
+    fill: var(--secondary-color);
+}
+@media (min-width: 700px) {
+    header{
+        height: 12vh;
+    }
+    #MGbb{
+        display: none;
+    }
+    h1{
+        font-size: 50px;
+    }
+    #MGlaund{
+        height: 88vh;
+        background-position: 0;
+    }
+    #MGdeccontPresent, #MGdeccontMis{
+        flex-direction: row;
+    }
+    .MGdeccontEntitmpct{
+        border-radius: 50%;
+    }
+    #MGdeccontPresent p, #MGdeccontMis p{
+        width: 50%;
+    }
+    .MGdeccontEntitm{
+        flex-direction: row;
+    }
+    .MGdeccontEntitmimg img{
+        height: 100px;
+    }
+}
+@media (min-width: 1200px) {
+    .MGdeccontEntitm{
+        width: 50%;
+    }
+}
